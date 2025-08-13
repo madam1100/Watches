@@ -1,0 +1,795 @@
+.topBar {
+    border: none 1px black;
+    border-bottom: solid 2px #ce9a12;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: #115234;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 2);
+}
+.rolexLogo {
+    background-image: url(/Photos/icons8-watch-100.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    cursor: pointer;
+}
+.menuBar {
+    background-image: url(../Photos/menu.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    z-index: 4;
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: scale ease;
+}
+.menuBar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+.eu {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 35px;
+    right: 300px;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;   
+    transition: transform 200ms ease;
+    will-change: scale;
+    text-decoration: none;
+}
+.eu:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.au {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: transform 200ms ease;
+    will-change: scale;
+    text-decoration: none;
+}
+.au:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.dw1 {
+    border: solid 2px #006600;
+    border-radius: 10px;
+    width: 23%;
+    height: 650px;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    z-index: 1;
+    background-color: rgb(211, 211, 211);
+    transition: background-color 0.5s, box-shadow 0.5s ease;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+.dw1:hover {
+    background-color: 	 #808080;
+    box-shadow: inset 0 0 0 3px #115234;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    .t1 {
+        font-size: 35px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+    }
+    .t2 {
+        font-size: 17px;
+        text-decoration: underline;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+    }
+    .t3 {
+        font-size: 17px;
+        position: absolute;
+        top: 270px;
+        text-decoration: underline;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+    }
+    .t4 {
+        border-radius: 100px 20px 100px 20px;
+    }
+    .t5 {
+        font-size: 25px;
+        width: 210px;
+        height: 60px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+.dw2 {
+    border: solid 2px #006600;
+    border-radius: 10px;
+    width: 23%;
+    height: 650px;
+    position: absolute;
+    top: 220px;
+    left: 500px;
+    z-index: 5;
+    background-color: rgb(211, 211, 211);
+    transition: background-color 0.3s,box-shadow 0.5s ease;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+.dw2:hover {
+    background-color: 	 #808080;
+    box-shadow: inset 0 0 0 3px #115234;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    .y1 {
+        font-size: 35px;
+        color: black;
+    }
+    .y2 {
+        font-size: 17px;
+        text-decoration: underline;
+        color: black;
+    }
+    .y3 {
+        font-size: 17px;
+        position: absolute;
+        top: 250px;
+        text-decoration: underline;
+        color: black;
+    }
+    .y4 {
+        border-radius: 100px 20px 100px 20px;
+    }
+    .y5 {
+        font-size: 25px;
+        width: 210px;
+        height: 60px;
+    }
+}
+.dw3 {
+    border: solid 2px #006600;
+    border-radius: 10px;
+    width: 23%;
+    height: 650px;
+    position: absolute;
+    top: 150px;
+    left: 970px;
+    z-index: 5;
+    background-color: rgb(211, 211, 211);
+    transition: background-color 0.3s, box-shadow 0.5s ease;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+.dw3:hover {
+    background-color: 	 #808080;
+    box-shadow: inset 0 0 0 3px #115234;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    .u1 {
+        font-size: 35px;
+        color: black;
+    }
+    .u2 {
+        font-size: 17px;
+        text-decoration: underline;
+        color: black;
+        width: 85%;
+    }
+    .u3 {
+        font-size: 17px;
+        position: absolute;
+        top: 250px;
+        text-decoration: underline;
+        color: black;
+        width: 85%;
+    }
+    .u4 {
+        border-radius: 100px 20px 100px 20px;
+    }
+    .u5 {
+        font-size: 25px;
+        width: 210px;
+        height: 60px;
+    }
+}
+.dw4 {
+    border: solid 2px #006600;
+    border-radius: 10px;
+    width: 23%;
+    height: 650px;
+    position: absolute;
+    top: 220px;
+    left: 1440px;
+    z-index: 5;
+    background-color: rgb(211, 211, 211);
+    transition: background-color 0.3s, box-shadow 0.5s ease;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+.dw4:hover {
+    background-color: #808080;
+    box-shadow: inset 0 0 0 3px #115234;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    .i1 {
+        font-size: 35px;
+        color: black;
+    }
+    .i2 {
+        font-size: 17px;
+        text-decoration: underline;
+        color: black;
+    }
+    .i3 {
+        font-size: 17px;
+        position: absolute;
+        top: 250px;
+        text-decoration: underline;
+        color: black;
+    }
+    .i4 {
+        border-radius: 100px 20px 100px 20px;
+    }
+    .i5 {
+        font-size: 25px;
+        width: 210px;
+        height: 60px;
+    }
+}
+.t4 {
+    background-image: url(../Photos/F1.jpg);
+    background-repeat: no-repeat;
+    border-radius: 20px 100px 20px 100px;
+    border: solid 2px #006600;
+    width: 300px;
+    height: 240px;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: border-radius 0.3s ease;
+}
+.t1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: font-family 0.5s ease, font-size 0.5s ease;
+    color: #999999;
+}
+.t2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    width: 85%;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; 
+    transition: font-family 0.5s ease, font-size 0.5s ease;
+    color: #999999;
+}
+.t3 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    width: 85%;
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; 
+    transition: font-family 0.5s ease, font-size 0.5s ease;
+    color: #999999;
+}
+.t5 {
+    border: none 1px black;
+    border-radius: 40px;
+    background-color: #115234;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: inherit;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    transition: transform 0.3s ease, 
+                width 0.3s ease, 
+                height 0.3s ease,
+                font-family 0.5s ease, 
+                font-size 0.3s ease,
+                background-color 0.5s ease;
+}
+.t5:hover {
+    cursor: pointer;
+}
+
+.t5 a {
+    text-decoration: none;
+    color: white;
+}
+.y1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: font-family 0.5s ease, font-size 0.3s ease;
+    color: #999999;
+}
+.y2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    width: 85%;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; 
+    transition: font-family 0.5s ease, font-size 0.3s ease;
+    color: #999999;
+}
+.y3 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    width: 85%;
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; 
+    transition: font-family 0.5s ease, font-size 0.3s ease;
+    color: #999999;
+}
+.y4 {
+    background-image: url(../Photos/F2.jpg);
+    background-repeat: no-repeat;
+    border-radius: 20px 100px 20px 100px;
+    width: 300px;
+    height: 240px;
+    border: solid 2px #006600;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: border-radius 0.3s ease;
+}
+.y5 {
+    border: none 1px black;
+    border-radius: 40px;
+    background-color: #115234;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    transition: background-color 0.5s ease;
+    transition: transform 0.3s ease, 
+                width 0.3s ease, 
+                height 0.3s ease, 
+                font-family 0.5s ease,
+                font-size 0.3s ease;
+}
+.y5:hover {
+    cursor: pointer;
+}
+.y5 a {
+    text-decoration: none;
+    color: white;
+}
+.u1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: font-family 0.5s ease, font-size 0.3s ease;
+    color: #999999;
+}
+.u2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; 
+    transition: font-family 0.5s ease, font-size 0.3s ease;
+    color: #999999;
+}
+.u3 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; 
+    transition: font-family 0.5s ease, font-size 0.3s ease;
+    color: #999999;
+}
+.u4 {
+    background-image: url(../Photos/F3.jpg);
+    background-repeat: no-repeat;
+    border-radius: 20px 100px 20px 100px;
+    width: 300px;
+    height: 240px;
+    border: solid 2px #006600;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: border-radius 0.3s ease;
+}
+.u5 {
+    border: none 1px black;
+    border-radius: 40px;
+    background-color: #115234;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    transition: transform 0.3s ease, 
+                width 0.3s ease, 
+                height 0.3s ease, 
+                font-family 0.5s ease,
+                font-size 0.3s ease,
+                background-color 0.5s ease;
+}
+.u5:hover {
+    cursor: pointer;
+}
+
+.u5 a {
+    text-decoration: none;
+    color: white;
+}
+.i1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: font-family 0.5s ease, font-size 0.3s ease;
+    color: #999999;
+}
+.i2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    width: 85%;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; 
+    transition: font-family 0.5s ease, font-size 0.3s ease;
+    color: #999999;
+}
+.i3 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    width: 85%;
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; 
+    transition: font-family 0.5s ease, font-size 0.3s ease;
+    color: #999999;
+}
+.i4 {
+    background-image: url(../Photos/F4.jpg);
+    background-repeat: no-repeat;
+    border-radius: 20px 100px 20px 100px;
+    width: 300px;
+    height: 240px;
+    border: solid 2px #006600;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: border-radius 0.3s ease;
+}
+.i5 {
+    border: none 1px black;
+    border-radius: 40px;
+    background-color: #115234;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, 
+                width 0.3s ease, 
+                height 0.3s ease, 
+                font-family 0.5s ease,
+                font-size 0.3s ease;
+}
+.i5:hover {
+    cursor: pointer;
+}
+
+.i5 a {
+    text-decoration: none;
+    color: white;
+}
+.tit {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 150px;
+    left: 11%;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    color: #115234;
+}
+.titC {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #115234;
+    position: absolute;
+    top: 300px;
+    left: 90px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    max-width: 500px;
+}
+.titC .phrase {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #ce9a12;
+}
+body {
+    background-color: rgb(211, 211, 211);
+}
+.bb {
+    border: solid 1px #115234;
+    height: 700px;
+    position: absolute;
+    top: 52%;
+    left: 650px;
+    transform: translateY(-50%);
+}
+.sbb {
+    border: solid 1px #115234;
+    height: 700px;
+    position: absolute;
+    top: 52%;
+    right: 650px;
+    transform: translateY(-50%);
+}
+.eed {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    color: #115234;
+}
+.rae {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #115234;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    max-width: 500px;
+}
+.rae .phrase1 {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #ce9a12;
+}
+.atj {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 150px;
+    right: 12%;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    color: #115234;
+}
+.dsg {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #115234;
+    position: absolute;
+    top: 300px;
+    right: 70px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    max-width: 500px;
+}
+.dsg .phrase2 {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #ce9a12;
+}
+.ci {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    color: #115234;
+}
+.wtw {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #115234;
+    position: absolute;
+    top: 360px;
+    left: 730px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    max-width: 500px;
+}
+.phrase3 {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #ce9a12;
+}
+.dbb {
+    border: solid 1px #115234;
+    height: 700px;
+    position: absolute;
+    top: 52%;
+    left: 650px;
+    transform: translateY(-50%);
+}
+.fbb {
+    border: solid 1px #115234;
+    height: 700px;
+    position: absolute;
+    top: 52%;
+    right: 650px;
+    transform: translateY(-50%);
+}

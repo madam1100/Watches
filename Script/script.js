@@ -1,3 +1,5 @@
+if (false) {
+
 function clearContent() {
     console.log('Clearing content...')
     const dw1 = document.getElementById('dw1');
@@ -508,3 +510,5 @@ document.getElementById('i5').addEventListener('click', function () {
         }, 5000 );
     });
 });
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topBar"></div>
+    <div class="rolexLogo" onclick="window.location.href='index.html'"></div>
+    <!-- <div class="menuBar"></div> -->
+    <a class="eu" id="eu" href="email.html">- Email Us</a>
+    <a class="au" id="au" href="about.html">- About Us</a>
+    <div class="dbb"></div>
+    <div class="fbb"></div>
+    <div class="btB">
+        <div class="contanier">
+            <div class="btT">By Rolex 2024</div>
+            <div class="btTT">Cookie References</div>
+        </div>
+    </div>
+    <div class="ci">Contact Information</div>
+    <div class="wtw">
+        <span class="phrase3">- We take website accessibility seriously for all users of our website. </span>
+        <span class="phrase3">- Our ongoing accessibility efforts work toward conforming to the Web Content Accessibility Guidelines (WCAG).</span>
+        <span class="phrase3">- We welcome any feedback you may have. When providing feedback as to accessibility, we ask that you provide us with as many specific details as possible so we may research your specific concerns.</span>
+        <span class="phrase3">- You can contact us via email at accessibility@rolex.com</span>
+    </div>
+    </div>
+    <link rel="stylesheet" href="/Style/style.css">
+    <style>
+        .privacy-policy {
+            padding: 20px;
+            max-width: 350px;
+            margin: 20px auto;
+            color: grey;
+            position: absolute;
+            top: 450px;
+            right: 100px;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+        }
+
+        .privacy-policy p {
+                margin: 10px 0;
+        }
+
+        .privacy-policy.hidden {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out 0.5s;
+        }
+
+        .privacy-policy.visible {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+        }
+
+        .btB {
+            border: none 1px black;
+            border-top: solid 2px #ce9a12;
+            height: 60px;
+            background-color: #115234;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .btT {
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            font-size: 15px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .btT:hover {
+            cursor: pointer;
+        }
+
+        .btTT {
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            font-size: 15px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .btTT:hover {
+            cursor: pointer;
+        }
+
+        .contanier {
+            /* border: solid 1px red; */
+            width: 300px;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,350 @@
+.topBar {
+    border: none 1px black;
+    border-bottom: solid 2px #ce9a12;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: #115234;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 2);
+}
+.rolexLogo {
+    background-image: url(/Photos/icons8-watch-100.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    cursor: pointer;
+}
+.menuBar {
+    background-image: url(../Photos/menu.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    z-index: 4;
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: scale ease;
+}
+.menuBar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+.eu {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 35px;
+    right: 300px;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;   
+    transition: transform 200ms ease;
+    will-change: scale;
+    text-decoration: none;
+}
+.eu:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.au {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    transition: transform 200ms ease;
+    will-change: scale;
+    text-decoration: none;
+}
+.au:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.privacy-policy {
+    padding: 20px;
+    max-width: 350px;
+    margin: 20px auto;
+    color: grey;
+    position: absolute;
+    top: 450px;
+    right: 100px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.privacy-policy p {
+    margin: 10px 0;
+}
+
+.privacy-policy.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out 0.5s;
+}
+
+.privacy-policy.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.spt {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+    color: #115234;
+    text-decoration: underline;
+    text-decoration-color: #ce9a12;
+    position: absolute;
+    top: 550px;
+    right: 50px;
+    max-width: 250px;
+    opacity: 0;
+    transform: scale(0.8); /* Start slightly smaller */
+    filter: blur(10px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out, filter 1s ease-in-out;
+    transform: translate(-50%, -50%) scale(0.8);
+    z-index: 1000;
+    display: inline-block;
+    text-align: center;
+}
+.spt.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); /* Scale to full size */
+    filter: blur(0); /* Remove blur to reveal content */
+}
+
+.spt.hide {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8); /* Shrink slightly */
+    filter: blur(10px); /* Apply blur to simulate disappearing into fog */
+}
+
+.btB {
+    border: none 1px black;
+    border-top: solid 2px #ce9a12;
+    height: 60px;
+    background-color: #115234;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.btT {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 830px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.btT:hover {
+    cursor: pointer;
+}
+.btTT {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 970px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.btTT:hover {
+    cursor: pointer;
+}
+
+
+.NameTitle {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: black;
+    position: absolute;
+    top: 150px;
+    left: 750px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.ContentNr1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #115234;
+    max-width: 500px;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.ContentNr2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #115234;
+    max-width: 500px;
+    position: absolute;
+    top: 500px;
+    left: 150px; 
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.WatchPrice {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    top: 300px;
+    right: 170px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.BuyButton {
+    border: none 1px black;
+    border-radius: 40px;
+    background-color: #115234;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 400px;
+    right: 250px;
+    z-index: 4;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.BuyButton:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 3px #ce9a12;
+    transition: box-shadow 0.5s ease;
+}
+.FirstPhoto {
+    background-image: url(../Photos/a1.jpg);
+    background-repeat: no-repeat;
+    width: 139px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    left: 790px;
+    border-radius: 50px 10px 10px 10px;
+    box-shadow: -10px -10px 1px #ce9a12;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.SecondPhoto {
+    background-image: url(../Photos/a2.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 225px;
+    position: absolute;
+    top: 300px;
+    left: 950px;
+    border-radius: 10px 50px 10px 10px;
+    box-shadow: 10px -10px 1px #ce9a12;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.ThirdPhoto {
+    background-image: url(../Photos/a3.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 225px;
+    position: absolute;
+    top: 615px;
+    left: 630px;
+    border-radius: 50px 10px 50px 50px;
+    box-shadow: -10px 10px 1px #ce9a12;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.FourthPhoto {
+    background-image: url(../Photos/a4.jpg);
+    background-repeat: no-repeat;
+    width: 398px;
+    height: 224px;
+    position: absolute;
+    top: 540px;
+    left: 950px;
+    border-radius: 10px 80px 40px 20px;
+    box-shadow: 10px 10px 1px #ce9a12;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.watch {
+    border: solid 2px;
+    height: 50px;
+    width: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    top: 400px;
+    right: 160px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    transition: background-color 0.3s,box-shadow 0.5s ease;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.watch:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #115234;
+    border: none;
+    color: #115234;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align-last: center; 
+}
