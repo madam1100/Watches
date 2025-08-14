@@ -38,6 +38,10 @@ document.getElementById('priceSelect').addEventListener('change', function() {
         const priceText = priceDiv.textContent;
         const privacyPolicy = document.getElementById('privacy-policy');
 
+        spt.classList.remove('show', 'hide')
+
+        void spt.offsetWidth;
+
         let s = ``
         document.getElementById('privacy-policy').innerHTML = s;
 

@@ -93,7 +93,7 @@
     margin: 20px auto;
     color: grey;
     position: absolute;
-    top: 450px;
+    top: 400px;
     right: 100px;
     opacity: 1;
     visibility: visible;
@@ -158,36 +158,51 @@
     right: 0px;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 2);
 }
+
 .btT {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
     color: white;
     font-size: 15px;
-    position: absolute;
-    bottom: 15px;
-    left: 830px;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
 }
+
 .btT:hover {
     cursor: pointer;
 }
+
 .btTT {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
     color: white;
     font-size: 15px;
-    position: absolute;
-    bottom: 15px;
-    left: 970px;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
 }
+
 .btTT:hover {
     cursor: pointer;
+}
+
+.contanier1 {
+    /* border: solid 1px red; */
+    width: 300px;
+    height: 60px;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    top: -200;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -199,7 +214,8 @@
     color: black;
     position: absolute;
     top: 150px;
-    left: 750px;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0;
     animation: fadeIn 2s ease forwards;
 }
@@ -212,7 +228,7 @@
     max-width: 500px;
     position: absolute;
     top: 350px;
-    left: 150px;
+    left: 5%;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
 }
@@ -225,7 +241,7 @@
     max-width: 500px;
     position: absolute;
     top: 500px;
-    left: 150px; 
+    left: 5%; 
     opacity: 0;
     animation: fadeIn 2s ease forwards;
 }
@@ -236,7 +252,7 @@
     font-size: 40px;
     color: black;
     position: absolute;
-    top: 300px;
+    top: 250px;
     right: 170px;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
@@ -247,23 +263,32 @@
     background-color: #115234;
     color: white;
     font-family: "Roboto", sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
     font-size: 20px;
     width: 200px;
     height: 50px;
     position: absolute;
-    top: 400px;
+    top: 350px;
     right: 250px;
     z-index: 4;
-    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
 }
 .BuyButton:hover {
     cursor: pointer;
     box-shadow: inset 0 0 0 3px #ce9a12;
-    transition: box-shadow 0.5s ease;
+}
+
+.contanier {
+    /* border: solid 1px red; */
+    width: 620px;
+    height: 500px;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .FirstPhoto {
     background-image: url(../Photos/a1.jpg);
@@ -271,12 +296,13 @@
     width: 139px;
     height: 300px;
     position: absolute;
-    top: 300px;
-    left: 790px;
+    top: 0;
+    left: 160px;
     border-radius: 50px 10px 10px 10px;
     box-shadow: -10px -10px 1px #ce9a12;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
+    border: solid 2px #115234;
 }
 .SecondPhoto {
     background-image: url(../Photos/a2.jpg);
@@ -284,12 +310,13 @@
     width: 300px;
     height: 225px;
     position: absolute;
-    top: 300px;
-    left: 950px;
+    top: 0;
+    right: 0;
     border-radius: 10px 50px 10px 10px;
     box-shadow: 10px -10px 1px #ce9a12;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
+    border: solid 2px #115234;
 }
 .ThirdPhoto {
     background-image: url(../Photos/a3.jpg);
@@ -297,12 +324,13 @@
     width: 300px;
     height: 225px;
     position: absolute;
-    top: 615px;
-    left: 630px;
+    top: 320px;
+    left: 0;
     border-radius: 50px 10px 50px 50px;
     box-shadow: -10px 10px 1px #ce9a12;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
+    border: solid 2px #115234;
 }
 .FourthPhoto {
     background-image: url(../Photos/a4.jpg);
@@ -310,12 +338,13 @@
     width: 398px;
     height: 224px;
     position: absolute;
-    top: 540px;
-    left: 950px;
+    top: 245px;
+    right: -100px;
     border-radius: 10px 80px 40px 20px;
     box-shadow: 10px 10px 1px #ce9a12;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
+    border: solid 2px #115234;
 }
 .watch {
     border: solid 2px;
@@ -325,7 +354,7 @@
     font-weight: 900;
     font-style: normal;
     position: absolute;
-    top: 400px;
+    top: 350px;
     right: 160px;
     background-color: rgb(211, 211, 211);
     border-radius: 10px;

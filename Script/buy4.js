@@ -30,36 +30,40 @@ document.body.addEventListener('click', function(e) {
     }
 });
 
-        const priceElement = document.getElementById('WatchPrice3');
-        const currentPriceText = priceElement.textContent;
-        const currentPrice = parseInt(currentPriceText.replace(/[^0-9]/g, ''));
+const priceElement = document.getElementById('WatchPrice3');
+const currentPriceText = priceElement.textContent;
+const currentPrice = parseInt(currentPriceText.replace(/[^0-9]/g, ''));
 
-        const duration = 1000;
-        const frameDuration = 1000 / 60;
-        const totalFrames = Math.round(duration / frameDuration);
-        const priceDiff = newPrice - currentPrice;
-        let currentFrame = 0;
+const duration = 1000;
+const frameDuration = 1000 / 60;
+const totalFrames = Math.round(duration / frameDuration);
+const priceDiff = newPrice - currentPrice;
+let currentFrame = 0;
 
-        const counter = setInterval(() => {
-            currentFrame++;
-            const progress = currentFrame / totalFrames;
-            const animatedPrice = Math.round(currentPrice + priceDiff * progress);
+const counter = setInterval(() => {
+        currentFrame++;
+        const progress = currentFrame / totalFrames;
+        const animatedPrice = Math.round(currentPrice + priceDiff * progress);
 
-            priceElement.textContent = `Price: $${animatedPrice.toLocaleString()}`;
+        priceElement.textContent = `Price: $${animatedPrice.toLocaleString()}`;
 
-            if (currentFrame === totalFrames) {
-                clearInterval(counter);
-            }
-        }, frameDuration);
-    }
+        if (currentFrame === totalFrames) {
+            clearInterval(counter);
+        }
+    }, frameDuration);
+}
 
-    const spt = document.getElementById('spt');
-    const ThirdBuy = document.getElementById('ThirdBuy');
+const spt = document.getElementById('spt');
+const ThirdBuy = document.getElementById('ThirdBuy');
 
 ThirdBuy.addEventListener('click', function () {
     const priceDiv = document.getElementById('WatchPrice3');
     const priceText = priceDiv.textContent;
     const privacyPolicy = document.getElementById('privacy-policy');
+
+    spt.classList.remove('show', 'hide')
+
+    void spt.offsetWidth;
 
     let s = ``;
     document.getElementById('privacy-policy').innerHTML = s;
