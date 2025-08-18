@@ -31,7 +31,7 @@ document.getElementById('priceSelect').addEventListener('change', function() {
     }
 
     const spt = document.getElementById('spt');
-    const buyButton = document.getElementById('sssssss1');
+    const buyButton = document.getElementById('buy1');
     
     buyButton.addEventListener('click', function() {
         const priceDiv = document.getElementById('totalPrice');

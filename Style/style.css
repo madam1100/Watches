@@ -794,7 +794,7 @@ body {
     transform: translateY(-50%);
 }
 
-@media (max-width: 704px) {
+@media (max-width: 444px) {
     .topBar {
         width: 100%;
     }
@@ -996,7 +996,7 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 999px) {
+@media (min-width: 445px) and (max-width: 999px) {
     .topBar {
         width: 100%;
     }
