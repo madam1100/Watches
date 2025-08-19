@@ -21,10 +21,10 @@
     </div>
     <div class="ci">Contact Information</div>
     <div class="wtw">
-        <span class="phrase3">- We take website accessibility seriously for all users of our website. </span>
-        <span class="phrase3">- Our ongoing accessibility efforts work toward conforming to the Web Content Accessibility Guidelines (WCAG).</span>
-        <span class="phrase3">- We welcome any feedback you may have. When providing feedback as to accessibility, we ask that you provide us with as many specific details as possible so we may research your specific concerns.</span>
-        <span class="phrase3">- You can contact us via email at accessibility@watches.com</span>
+        - We take website accessibility seriously for all users of our website. <br><br>
+        - Our ongoing accessibility efforts work toward conforming to the Web Content Accessibility Guidelines (WCAG).<br><br>
+        - We welcome any feedback you may have. When providing feedback as to accessibility, we ask that you provide us with as many specific details as possible so we may research your specific concerns.<br><br>
+        - You can contact us via email at accessibility@watches.com<br><br>
     </div>
     </div>
     <link rel="stylesheet" href="/Style/style.css">
@@ -83,6 +83,131 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
+        }
+
+        @media (max-width: 600px) {
+            .dbb {
+                height: 0;
+                width: 90%;
+                position: absolute;
+                top: 300px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .ci {
+                font-size: 30px;
+                white-space: nowrap;
+                position: absolute;
+                top: 350px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .wtw {
+                text-align: center;
+                max-width: 500px;
+                position: absolute;
+                top: 450px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .fbb {
+                height: 0;
+                width: 90%;
+                position: absolute;
+                top: 1030px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .btB {
+                position: absolute;
+                top: 1100px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1023px) {
+            .dbb {
+                height: 0;
+                width: 90%;
+                position: absolute;
+                top: 250px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .ci {
+                font-size: 30px;
+                white-space: nowrap;
+                position: absolute;
+                top: 300px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .wtw {
+                text-align: center;
+                max-width: 500px;
+                position: absolute;
+                top: 400px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .fbb {
+                height: 0;
+                width: 90%;
+                position: absolute;
+                top: 850px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .btB {
+                position: absolute;
+                top: 950px;
+            }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1618px) {
+            .dbb {
+                height: 70%;
+                position: absolute;
+                top: 450px;
+                left: 15%;
+            }
+
+            .ci {
+                font-size: 30px;
+                white-space: nowrap;
+                position: absolute;
+                top: 200px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .wtw {
+                text-align: center;
+                max-width: 500px;
+                position: absolute;
+                top: 300px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .fbb {
+                height: 70%;
+                position: absolute;
+                top: 450px;
+                right: 15%;
+            }
+
+            .btB {
+                position: absolute;
+                top: 780px;
+            }
         }
     </style>
 </body>
