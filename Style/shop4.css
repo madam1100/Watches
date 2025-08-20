@@ -387,7 +387,7 @@
     }
 
     .eu:hover {
-        transform: none;
+        transform: translateX(50%);
     }
 
     .au {
@@ -399,7 +399,7 @@
     }
 
     .au:hover {
-        transform: none;
+        transform: translateX(50%);
     }
 
     .NameTitle3 {
@@ -543,7 +543,7 @@
     }
 
     .eu:hover {
-        transform: none;
+        transform: translateX(50%);
     }
 
     .au {
@@ -554,7 +554,7 @@
     }
 
     .au:hover {
-        transform: none;
+        transform: translateX(50%);
     }
 
     .NameTitle3 {

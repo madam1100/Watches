@@ -802,7 +802,7 @@ body {
     }
 
     .eu:hover {
-        transform: none;
+        transform: translateX(50%);
     }
 
     .au {
@@ -815,7 +815,7 @@ body {
     }
 
     .au:hover {
-        transform: none;
+        transform: translateX(50%);
     }
 
     .dw1 {
@@ -1011,7 +1011,7 @@ body {
     }
 
     .eu:hover {
-        transform: none;
+        transform: translateX(50%);
     }
 
     .au {
@@ -1023,7 +1023,7 @@ body {
     }
 
     .au:hover {
-        transform: none;
+        transform: translateX(50%);
     }
 
     .dw1 {
