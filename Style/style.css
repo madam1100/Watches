@@ -801,6 +801,10 @@ body {
         transform: translateX(50%);
     }
 
+    .eu:hover {
+        transform: none;
+    }
+
     .au {
         white-space: nowrap;
         color: #006600;
@@ -808,6 +812,10 @@ body {
         top: 150px;
         right: 50%;
         transform: translateX(50%);
+    }
+
+    .au:hover {
+        transform: none;
     }
 
     .dw1 {
@@ -1002,12 +1010,20 @@ body {
         right: 30%;
     }
 
+    .eu:hover {
+        transform: none;
+    }
+
     .au {
         white-space: nowrap;
         color: #006600;
         position: absolute;
         top: 150px;
         right: 50%;
+    }
+
+    .au:hover {
+        transform: none;
     }
 
     .dw1 {
